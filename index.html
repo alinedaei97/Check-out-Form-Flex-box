@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Amazon Checkout</title>
+		<meta charset="utf-8" name="viewport" content="device-width , initial-scale=1 " > 
+		<link rel="stylesheet" type="text/css" href="stylling.css">
+		</head>
+	<body>
+		<form>
+			<div class="container">
+				<div class="details">
+					<div class="address">
+					<div class="form-group">
+				<label for="address">Address :</label>
+					<input type="text" placeholder="address" name="address" maxlength="100" size="30px">
+						</div>
+					<div class="form-group">
+					<label for="postcode">Postcode :</label>
+					<input type="number" placeholder="postcode" name="postcode" maxlength="100" size="40px">
+					<br />
+						</div>
+					<div class="form-group">
+					<label for="city">City :</label>
+					<input type="text" placeholder="city" name="postcode" maxlength="100" size="30px">
+						</div>
+							</div>
+					<div class="shipping">
+						<div>Choose your Shipping method:</div>
+						<div>
+							<select name="shipping" id="shipping">
+								<option value="free shipping">free shipping</option>
+								<option value="1-Day shipping">1-Day shipping</option>
+								<option value="2-Day shipping">2-Day shipping</option>
+							</select>
+						</div>
+					</div>
+				<div class="payment">
+					<div>Choose your payment method:</div>
+					<div class="lab">
+						<label>Paypal<input type="radio" name="payment" value="paypal"> </label>
+						<label>Credit card<input type="radio" name="payment" value="credit card"> </label>
+						<label>Paypal<input type="radio" name="payment" value="debit card"> </label>
+						</div>
+			
+					</div>
+					
+					<div class="checks">
+						<label>Securely save my payment details
+                            <input type="checkbox" checked ></label>
+
+						<label>Sign me up for email updates
+						<input type="checkbox" checked ></label>
+					</div>
+					</div>
+				<div class="comment">
+					<label for="comment">Comment:</label>
+					<textarea rows="4" cols="40"   name="comment"></textarea>
+				</div>
+			
+			</div>
+			<div class="submit"><button type="submit">Submit</button></div>
+		
+		</form>
+	
+	
+	</body>
+</html>

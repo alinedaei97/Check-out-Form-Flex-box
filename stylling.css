@@ -1,0 +1,129 @@
+*{
+	box-sizing: border-box;
+}
+
+body,html{
+	margin: 0;
+	padding: 0;
+}
+
+form{
+	display: flex;
+	flex-direction: column;
+	padding: 10px;
+	height: 100vh;   /* vh=vertical height    100means that the full height of webpage */
+	font-size: 24px;	
+}
+input, textarea , select{
+    background-color: rgba(138, 230, 81, 0.7);
+    border-radius: 10px;
+}
+
+/*1 container*/
+.container{
+
+	display: flex;
+	flex-direction:row;
+	flex-wrap: wrap;
+    margin-bottom: 1em;
+}
+/*1.1 details*/
+.details{
+	flex: 3;
+}
+
+/*1.1.1 address*/
+.address .form-group{
+	display: flex;
+	flex-direction: row;
+	flex: 1; 
+	margin: 1em;
+}
+.address .form-group  input{
+	flex: 3;
+	font-size:1em;
+	border-style: outset;
+
+
+}
+
+.address .form-group label{
+	flex: 1;
+	text-align: right;
+	margin-right: 1em;
+}
+
+/*1.1.2 shipping*/
+.shipping{
+	text-align: center;
+}
+.shipping select{
+	font-size: 1em;
+	margin-top: 0.5em;
+	border:outset;
+		border: none;
+}
+
+/*1.1.3 payment*/
+.payment{
+	text-align: center;
+    margin-top: 0.5em;
+}
+.payment div:nth-child(2){
+    display: flex;
+    margin-top: 0.5em;
+}
+.payment div:nth-child(2) label{
+    flex: 1;
+}
+/*
+	
+	flex-direction: row;
+	justify-content: center;
+	flex-grow: 0;
+	justify-content: space-between;
+	margin-left: 130px;
+*/
+
+
+/*1.1.4. checks*/
+.checks{
+	display: flex;
+    text-align: center;
+    margin-top: 1em;
+   
+}
+.checks label{
+    flex: 1;
+  
+}
+
+
+/*1.2 comment*/
+.comment{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin: 1em;
+    
+/*	background-color: greenyellow;*/
+}
+
+.comment textarea{
+    flex: 1;
+}
+
+
+/*2 submit*/
+.submit{
+    margin-top: auto;
+    text-align: center;
+}
+.submit button{
+	font-size: 1.5em;
+    background-color: deepskyblue;
+	color: aliceblue;
+    width: 100%;
+    border: none;
+}
+
